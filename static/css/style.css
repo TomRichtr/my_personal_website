@@ -1,0 +1,270 @@
+#top-navbar {
+  background-color: #a39024;
+  font-family: "Carrois Gothic SC", sans-serif;
+}
+
+#experiences-navbar {
+  min-width: 10px;
+}
+
+#external-links-navbar {
+  margin-right: 0.65%;
+}
+
+#search-button {
+  color:white;
+  border-color: white;
+}
+
+#search-button:hover {
+  background-color: #a39024;
+  color:white;
+  border-color: white;
+  text-decoration: underline;
+  box-shadow:0px 0px 2px 2px white;
+}
+
+#phone-navbar {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+}
+
+#email-navbar {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+}
+
+#navbarDropdown {
+  float: left;
+}
+
+.nav-link.dropdown-toggle.experiences {
+  margin-right: 95px;
+}
+
+.dropdown-item {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+}
+
+.nav-link.dropdown-toggle.abilities {
+  margin-right: 69px;
+}
+
+#phone-navbar:hover {
+  cursor:pointer;
+}
+
+#email-navbar:hover {
+  cursor:pointer;
+}
+
+.fas.fa-phone-square {
+  margin-left: 1px;
+  margin-right: 2px;
+}
+
+.fas.fa-at {
+  margin-right: 4px;
+}
+
+.fas.fa-user-graduate {
+  margin-left: 2px;
+  margin-right: 3.5px;
+}
+
+.fas.fa-book-open {
+  margin-left: 0.5px;
+  margin-right: 3px;
+}
+
+.fas.fa-stamp {
+  margin-left: 1.5px;
+  margin-right: 3.5px;
+}
+
+.fas.fa-briefcase {
+  margin-left: 1.5px;
+  margin-right: 3.5px;
+}
+
+.fas.fa-arrow-alt-circle-down {
+  margin-right: 4px;
+}
+
+.fas.fa-brain {
+  margin-left: 0.5px;
+  margin-right: 3.5px;
+}
+.fas.fa-tools {
+  margin-left: 1.5px;
+  margin-right: 3.5px;
+}
+.fas.fa-globe-europe {
+  margin-left: 1.5px;
+  margin-right: 3.5px;
+}
+
+
+#CV-download-navbar:hover {
+  cursor:pointer;
+}
+
+.alert {
+  color: white;
+  border-radius: 5px;
+  background-color: #a39024;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  padding: 12px 16px;
+  position: fixed;
+  top: 75px;
+  right: 16px;
+  display:none;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.background-container {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+#jumbotron-index {
+    background: none;
+    font-family: "Carrois Gothic SC", sans-serif;
+    color:white;
+}
+
+.sub-title-about {
+  border-top-color:  #c4c4c4;
+  border-top-style: solid;
+  border-top-width: 1px;
+  padding-top: 17px;
+}
+
+.sub-title-details {
+  border-top-color:  #c4c4c4;
+  border-top-style: solid;
+  border-top-width: 1px;
+  padding-top: 17px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#jumbotron-profile {
+  background: none;
+  font-family: "Carrois Gothic SC", sans-serif;
+  color: #a39024;
+}
+
+#basicinfo-container {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.text {
+  color:black;
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+}
+
+.text-name {
+  margin-top:6%;
+}
+
+.photo-map-container {
+  border-radius: 10%;
+}
+
+.place:hover {
+  color:#a39024;
+}
+
+.place {
+  color:#a39024;
+}
+
+.fa-grip-lines-vertical {
+  color:#c4c4c4;
+}
+
+.carousel-indicators .active{
+  background-color: #a39024;
+}
+
+.carousel-indicators li {
+  background-color: #a39024;
+  height: 8px;
+  width: 55px;
+}
+
+.carousel-indicators {
+  bottom:-24px;
+}
+
+.carousel-inner {
+   margin-bottom:35px;
+}
+
+.carousel-control-prev-icon {
+
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23a39024' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23a39024' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-size: 100% 100%;
+    height: 40px;
+    width: 40px;
+}
+
+.career-list {
+  font-size: 0.8em;
+}
+
+.menu-icon-container {
+  text-align: justify;
+}
+
+.checked {
+  color: #eac700;
+}
+
+.rating-container:hover {
+  background-color: #fff2a9;
+  font-weight: bold;
+}
+
+.line-separator-container {
+  border-top-color:  #c4c4c4;
+  border-top-style: solid;
+  border-top-width: 1px;
+  padding-top: 17px;
+}
+
+.display-4 {
+  margin-top:5%;
+}
+
+.top-line {
+  font-weight: bold;
+}
+
+.skill-name-container {
+  color:black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-nav li:hover>.dropdown-menu {
+  display: block;
+}
