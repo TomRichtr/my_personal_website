@@ -4,6 +4,7 @@ from django.views.generic import TemplateView
 from django.http import HttpResponse, Http404
 from django.conf import settings
 import os
+from django.db.models import Q
 
 class Profile (TemplateView):
 

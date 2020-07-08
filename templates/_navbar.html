@@ -4,18 +4,18 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="{% url "index" %}">Home</a>
+  <a class="navbar-brand menu-link" href="{% url "index" %}">Home</a>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item">
-        <a class="nav-link" href="{% url 'personal_website:profile' %}">Profile</a>
+        <a class="nav-link test menu-link" href="{% url 'personal_website:profile' %}">Profile</a>
       </li>
 
       <li class="nav-item dropdown">
 
-          <a class="nav-link experiences" href="{% url 'personal_website:experiences' %}" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link experiences menu-link" href="{% url 'personal_website:experiences' %}" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
             Experiences
             <a class="nav-link dropdown-toggle experiences" href="{% url 'personal_website:experiences' %}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             </a>
@@ -24,14 +24,13 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="experiences-navbar">
           <a class="dropdown-item" href="{% url 'personal_website:experiences' %}#courses"><i class="fas fa-book-open"></i>  Courses</a>
           <a class="dropdown-item" href="{% url 'personal_website:experiences' %}#certificates"><i class="fas fa-stamp"></i> Certificates</a>
-          <a class="dropdown-item" href="{% url 'personal_website:experiences' %}#experiences"><i class="fas fa-user-graduate"></i> Education</a>
+          <a class="dropdown-item" href="{% url 'personal_website:experiences' %}#education"><i class="fas fa-user-graduate"></i> Education</a>
           <a class="dropdown-item" href="{% url 'personal_website:experiences' %}#careers"><i class="fas fa-briefcase"></i> Careers</a>
         </div>
       </li>
 
       <li class="nav-item dropdown">
-
-          <a class="nav-link abilities" href="{% url 'personal_website:abilities' %}" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link abilities menu-link" href="{% url 'personal_website:abilities' %}" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
             Abilities
             <a class="nav-link dropdown-toggle abilities" href="{% url 'personal_website:abilities' %}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             </a>
@@ -44,24 +43,32 @@
         </div>
       </li>
 
-
       <li class="nav-item">
-        <a class="nav-link disabled" href="{% url 'personal_website:projects' %}">Projects</a>
+        <a class="nav-link disabled menu-link" href="{% url 'personal_website:projects' %}">Projects</a>
       </li>
 
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+
+
+        <a class="nav-link menu-link contacts" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
           Contacts
+          <a class="nav-link dropdown-toggle contacts" href="{% url 'personal_website:abilities' %}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          </a>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="contacts-navbar">
-          <div class="dropdown-item" href="" id="email-navbar" data-toggle="popover" title="Click to copy to clipboard."><i class="fas fa-at"></i> t.richtr@email.cz</div>
-          <div class="dropdown-item" href="" id="phone-navbar" data-toggle="popover" title="Click to copy to clipboard."><i class="fas fa-phone-square"></i> +420 778 540 970</div>
+          <div class="dropdown-item" href="" id="email-navbar" title="Click to copy to clipboard."><i class="fas fa-at"></i> t.richtr@email.cz</div>
+          <div class="dropdown-item" href="" id="phone-navbar" title="Click to copy to clipboard."><i class="fas fa-phone-square"></i> +420 778 540 970</div>
         </div>
       </li>
 
+
+
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link menu-link downloads" href="#" id="navbarDropdown" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
           Downloads
+          <a class="nav-link dropdown-toggle downloads" href="{% url 'personal_website:abilities' %}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          </a>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="contacts-navbar">
           <a class="dropdown-item" href="" Download="{% static 'downloads/dummy.pdf' %}" id="CV-download-navbar" data-toggle="popover" title="Download a CV."><i class="fas fa-arrow-alt-circle-down"></i> Curriculum Vitae</a>
@@ -72,17 +79,13 @@
 
     <ul class="navbar-nav mr-right mt-2 mt-lg-0" id="external-links-navbar">
       <li class="nav-item">
-        <a class="nav-link" href="https://github.com/TomRichtr" target="_blank"><i class="fab fa-github-square fa-lg"></i></a>
+        <a class="nav-link menu-link" href="https://github.com/TomRichtr" target="_blank"><i class="fab fa-github-square fa-lg"></i></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="https://www.linkedin.com/in/trichtr/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a class="nav-link menu-link" href="https://www.linkedin.com/in/trichtr/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
       </li>
     </ul>
 
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search-button">Search</button>
-    </form>
   </div>
 </nav>

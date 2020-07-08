@@ -41,6 +41,10 @@ INSTALLED_APPS = [
     'MyPersonalWebsiteApp',
 ]
 
+ELASTICSEACH_DSL  = {
+    'default': {'host':'localhost:9200'},
+}
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

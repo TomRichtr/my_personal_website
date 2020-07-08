@@ -32,6 +32,7 @@
 #email-navbar {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.8em;
+
 }
 
 #navbarDropdown {
@@ -253,7 +254,7 @@ body, html {
 }
 
 .display-4 {
-  margin-top:5%;
+  margin-top:55px;
 }
 
 .top-line {
@@ -267,4 +268,27 @@ body, html {
 
 .navbar-nav li:hover>.dropdown-menu {
   display: block;
+}
+
+.menu-link:hover {
+  text-shadow: 0px 0px 5px white;
+}
+
+.index-name {
+  text-shadow: 0px 0px 5px white;
+}
+
+.index-subtitle {
+  text-shadow: 0px 0px 5px white;
+}
+
+
+.nav-link.dropdown-toggle.contacts {
+  margin-right: 75px;
+}
+
+#canvas {
+  position: fixed;
+  top: 70%;
+  left: 0;
 }
