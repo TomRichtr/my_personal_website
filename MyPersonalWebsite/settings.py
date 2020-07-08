@@ -17,8 +17,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join (BASE_DIR,"templates")
 STATICFILES_DIRS = [os.path.join (BASE_DIR,"static")]
 
-ALLOWED_HOSTS = ['tomasr.pythonanywhere.com']
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
@@ -28,7 +26,7 @@ SECRET_KEY = 'a8=n4g5z02wf&ec8d_=if=49=#ko3ya)=4p)+ev7s$^j(-!d=7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['tomasr.pythonanywhere.com']
 
 
 # Application definition
