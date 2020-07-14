@@ -26,7 +26,7 @@ SECRET_KEY = 'a8=n4g5z02wf&ec8d_=if=49=#ko3ya)=4p)+ev7s$^j(-!d=7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['tomasr.pythonanywhere.com']
+ALLOWED_HOSTS = ['tomasr.pythonanywhere.com','127.0.0.1:8000','127.0.0.1']
 
 
 # Application definition
@@ -39,8 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'MyPersonalWebsiteApp',
+    'crispy_forms',
 ]
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -108,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Prague'
 
 USE_I18N = True
 
@@ -121,3 +123,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+LOGIN_REDIRECT_URL = '/'

@@ -400,3 +400,15 @@ function resizeCanvas() {
 
   context.scale(resolution, resolution);
 }
+
+//counter in form text field
+$('#textfield').keyup(updateCount);
+$('#textfield').keydown(updateCount);
+
+function updateCount() {
+    var cs = $(this).val().length;
+    var leftChars = "(characters left: "
+    var endBracklet = ")"
+    var countOfCharacters = 1000
+    $('#characters').text(leftChars + (countOfCharacters - cs) + endBracklet);
+}
