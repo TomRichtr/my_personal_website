@@ -11,7 +11,6 @@ from . import forms
 from .models import Message
 from .forms import BoardMessage
 from django.urls import reverse_lazy
-from . import urls
 
 class Index (TemplateView):
 

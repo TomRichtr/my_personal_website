@@ -2,20 +2,20 @@
 {% load static %}
 {% load crispy_forms_tags %}
 
-
 {% block content %}
+
 <div class="row">
   <div class="col-sm-3"></div>
   <div class="col-sm">
     <div class="jumbotron jumbotron-fluid" id="jumbotron-profile">
       <h1 class="display-4">Please Login:</h1>
-      <p class="lead text-dark">Must be SuperUser, please check admin for issues.</p>
-        {% if form.errors %}
+      <p class="lead text-dark">You must a superuser to log in.</p>
+      {% if form.errors %}
       <div class="alert-danger" role="alert">Your username and password didn't match. Please try again!</div>
-        {% endif %}
+      {% endif %}
       <form method="POST" action="{% url 'login' %}">
-        {% csrf_token %}
-        {{form|crispy}}
+      {% csrf_token %}
+      {{form|crispy}}
       <input type="submit" class='btn btn-secondary btn-lg btn-block' value="Login" />
       <input type="hidden" name="next" value="{{ next }}" />
       </form>
@@ -23,7 +23,5 @@
   </div>
   <div class="col-sm-3"></div>
 </div>
-
-
 
 {% endblock %}
