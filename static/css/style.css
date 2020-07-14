@@ -165,18 +165,11 @@ body, html {
   color: #a39024;
 }
 
-#jumbotron-message {
-  background: none;
-  font-family: "Carrois Gothic SC", sans-serif;
-  color: #a39024;
-  margin-bottom: -50px;
-}
-
 .jumbotron-message {
   background: none;
   font-family: "Carrois Gothic SC", sans-serif;
   color: #a39024;
-  margin-bottom: -50px;
+  margin-bottom:-50px;
 }
 
 #basicinfo-container {
