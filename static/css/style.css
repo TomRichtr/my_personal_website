@@ -3,6 +3,13 @@
   font-family: "Carrois Gothic SC", sans-serif;
 }
 
+#jumbotron-message {
+  background: none;
+  font-family: "Carrois Gothic SC", sans-serif;
+  color: #a39024;
+  margin-bottom:-50px;
+}
+
 #experiences-navbar {
   min-width: 10px;
 }
@@ -163,13 +170,6 @@ body, html {
   background: none;
   font-family: "Carrois Gothic SC", sans-serif;
   color: #a39024;
-}
-
-.jumbotron-message {
-  background: none;
-  font-family: "Carrois Gothic SC", sans-serif;
-  color: #a39024;
-  margin-bottom:-50px;
 }
 
 #basicinfo-container {
