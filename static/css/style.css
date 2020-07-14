@@ -3,10 +3,11 @@
   font-family: "Carrois Gothic SC", sans-serif;
 }
 
-#jumbotron-messages {
+#jumbotron-message {
   background: none;
   font-family: "Carrois Gothic SC", sans-serif;
   color: #a39024;
+  margin-bottom:-50px;
 }
 
 #experiences-navbar {
