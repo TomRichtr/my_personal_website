@@ -4,37 +4,12 @@
 <div class="row">
   <div class="col-sm-3"></div>
   <div class="col-sm">
-    <div class="container">
-      <div class="jumbotron jumbotron-fluid" id="jumbotron-message">
-        <h1 class="display-4">Message list</h1>
+    <div class="jumbotron jumbotron-fluid" id="jumbotron-profile">
+      <div class="container">
+        <h1 class="display-4">Messsage list</h1>
       </div>
     </div>
   </div>
   <div class="col-sm-3"></div>
 </div>
-{% for message in object_list %}
-<div class="row">
-  <div class="col-sm-3"></div>
-  <div class="col-sm">
-    <div class="card">
-      <h5 class="card-header">{{message.email}}</h5>
-      <div class="card-body">
-        <h5 class="card-title">{{message.created_date}}</h5>
-        <p class="card-text">{{message.text}}</p>
-        <a href="{% url 'personal_website:delete' message.id %}" class="btn btn-secondary btn-lg btn-block">Delete</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-3"></div>
-</div>
-</div>
-{% empty %}
-<div class="row">
-<div class="col-sm-3"></div>
-<div class="col-sm">
-  <p class="lead text-dark">No messages available!</p>
-</div>
-</div>
-<div class="col-sm-3"></div>
-{% endfor %}
 {% endblock %}
