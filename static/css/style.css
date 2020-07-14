@@ -263,6 +263,13 @@ body, html {
   margin-top:25px;
 }
 
+.display-5 {
+  margin-top:90px;
+  font-family: "Carrois Gothic SC", sans-serif;
+  color: #a39024;
+  font-size: 3.5rem;
+}
+
 .top-line {
   font-weight: bold;
 }
