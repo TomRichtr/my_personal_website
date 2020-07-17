@@ -51,6 +51,24 @@ $(".rating-container.jq").hover(
   }
 );
 
+$(".rating-container.react").hover(
+  function () {
+    $(".rating-container.react .checked").addClass("fa-lg");
+  },
+  function () {
+    $(".rating-container.react .checked").removeClass("fa-lg");
+  }
+);
+
+$(".rating-container.redux).hover(
+  function () {
+    $(".rating-container.redux .checked").addClass("fa-lg");
+  },
+  function () {
+    $(".rating-container.redux .checked").removeClass("fa-lg");
+  }
+);
+
 $(".rating-container.python").hover(
   function() {
     $(".rating-container.python .checked").addClass( "fa-lg" );
@@ -140,7 +158,6 @@ $(".rating-container.gitbash").hover(
   }
 );
 
-
 $(".rating-container.msoffice").hover(
   function() {
     $(".rating-container.msoffice .checked").addClass( "fa-lg" );
@@ -204,8 +221,6 @@ $(".rating-container.githubapp").hover(
     $(".rating-container.githubapp .checked").removeClass( "fa-lg" );
   }
 );
-
-
 
 var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
