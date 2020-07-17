@@ -51,21 +51,30 @@ $(".rating-container.jq").hover(
   }
 );
 
+$(".rating-container.jq").hover(
+  function () {
+    $(".rating-container.jq .checked").addClass("fa-lg");
+  },
+  function () {
+    $(".rating-container.jq .checked").removeClass("fa-lg");
+  }
+);
+
+$(".rating-container.redux").hover(
+  function () {
+    $(".rating-container.redux .checked").addClass("fa-lg");
+  },
+  function () {
+    $(".rating-container.redux .checked").removeClass("fa-lg");
+  }
+);
+
 $(".rating-container.react").hover(
   function () {
     $(".rating-container.react .checked").addClass("fa-lg");
   },
   function () {
     $(".rating-container.react .checked").removeClass("fa-lg");
-  }
-);
-
-$(".rating-container.redux).hover(
-  function () {
-    $(".rating-container.redux .checked").addClass("fa-lg");
-  },
-  function () {
-    $(".rating-container.redux .checked").removeClass("fa-lg");
   }
 );
 
