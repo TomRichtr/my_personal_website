@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="row">
+  <div class="col-sm col-md"></div>
+
+  <div class="col-sm-12 col-md-12">
+    <div class="jumbotron jumbotron-fluid" id="jumbotron-profile">
+      <div class="container">
+      <h1 class="display-4">About me</h1>
+        {% include "about_me/_intro.html" %}
+        {% include "about_me/_courses.html" %}
+        {% include "about_me/_certificates.html" %}
+        {% include "about_me/_skills.html" %}
+        {% include "about_me/_tools.html" %}
+        {% include "about_me/_languages.html" %}
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm col-md"></div>
+</div>
+
+{% endblock %}

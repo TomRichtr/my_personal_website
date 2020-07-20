@@ -1,12 +1,12 @@
 #top-navbar {
-  background-color: #a39024;
+  background-color: #1B2627;
   font-family: "Carrois Gothic SC", sans-serif;
 }
 
 #msg {
   background: none;
   font-family: "Carrois Gothic SC", sans-serif;
-  color: #a39024;
+  color: #354042;
 }
 
 #experiences-navbar {
@@ -17,28 +17,14 @@
   margin-right: 0.65%;
 }
 
-#search-button {
-  color:white;
-  border-color: white;
-}
-
-#search-button:hover {
-  background-color: #a39024;
-  color:white;
-  border-color: white;
-  text-decoration: underline;
-  box-shadow:0px 0px 2px 2px white;
-}
-
 #phone-navbar {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
 }
 
 #email-navbar {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
-
 }
 
 #navbarDropdown {
@@ -50,20 +36,12 @@
 }
 
 .dropdown-item {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
 }
 
 .nav-link.dropdown-toggle.abilities {
   margin-right: 69px;
-}
-
-#phone-navbar:hover {
-  cursor:pointer;
-}
-
-#email-navbar:hover {
-  cursor:pointer;
 }
 
 .fas.fa-phone-square {
@@ -112,15 +90,10 @@
   margin-right: 3.5px;
 }
 
-
-#CV-download-navbar:hover {
-  cursor:pointer;
-}
-
 .alert {
   color: white;
   border-radius: 5px;
-  background-color: #a39024;
+  background-color: #354042;
   border-width: 1px;
   border-style: solid;
   border-color: white;
@@ -128,12 +101,13 @@
   position: fixed;
   top: 75px;
   right: 16px;
-  display:none;
+  display: none;
 }
 
-body, html {
+body,
+html {
   height: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .background-container {
@@ -144,20 +118,20 @@ body, html {
 }
 
 #jumbotron-index {
-    background: none;
-    font-family: "Carrois Gothic SC", sans-serif;
-    color:white;
+  background: none;
+  font-family: "Carrois Gothic SC", sans-serif;
+  color: white;
 }
 
 .sub-title-about {
-  border-top-color:  #c4c4c4;
+  border-top-color: #c4c4c4;
   border-top-style: solid;
   border-top-width: 1px;
   padding-top: 17px;
 }
 
 .sub-title-details {
-  border-top-color:  #c4c4c4;
+  border-top-color: #c4c4c4;
   border-top-style: solid;
   border-top-width: 1px;
   padding-top: 17px;
@@ -168,7 +142,7 @@ body, html {
 #jumbotron-profile {
   background: none;
   font-family: "Carrois Gothic SC", sans-serif;
-  color: #a39024;
+  color: #354042;
 }
 
 #basicinfo-container {
@@ -177,13 +151,13 @@ body, html {
 }
 
 .text {
-  color:black;
-  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-family: "Montserrat", sans-serif;
   text-align: justify;
 }
 
 .text-name {
-  margin-top:6%;
+  margin-top: 6%;
 }
 
 .photo-map-container {
@@ -191,48 +165,48 @@ body, html {
 }
 
 .place:hover {
-  color:#a39024;
+  color: #354042;
 }
 
 .place {
-  color:#a39024;
+  color: #354042;
 }
 
 .fa-grip-lines-vertical {
-  color:#c4c4c4;
+  color: #c4c4c4;
 }
 
-.carousel-indicators .active{
-  background-color: #a39024;
+.carousel-indicators .active {
+  background-color: #354042;
 }
 
 .carousel-indicators li {
-  background-color: #a39024;
+  background-color: #354042;
   height: 8px;
   width: 55px;
 }
 
 .carousel-indicators {
-  bottom:-24px;
+  bottom: -24px;
 }
 
 .carousel-inner {
-   margin-bottom:35px;
+  margin-bottom: 35px;
 }
 
 .carousel-control-prev-icon {
-
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23a39024' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23354042' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 
 .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23a39024' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23354042' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon {
-    background-size: 100% 100%;
-    height: 40px;
-    width: 40px;
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-size: 100% 100%;
+  height: 40px;
+  width: 40px;
 }
 
 .career-list {
@@ -253,20 +227,20 @@ body, html {
 }
 
 .line-separator-container {
-  border-top-color:  #c4c4c4;
+  border-top-color: #c4c4c4;
   border-top-style: solid;
   border-top-width: 1px;
   padding-top: 17px;
 }
 
 .display-4 {
-  margin-top:25px;
+  margin-top: 25px;
 }
 
 .display-5 {
-  margin-top:90px;
+  margin-top: 90px;
   font-family: "Carrois Gothic SC", sans-serif;
-  color: #a39024;
+  color: #354042;
   font-size: 3.5rem;
 }
 
@@ -275,26 +249,25 @@ body, html {
 }
 
 .skill-name-container {
-  color:black;
-  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-family: "Montserrat", sans-serif;
 }
 
-.navbar-nav li:hover>.dropdown-menu {
+.navbar-nav li:hover > .dropdown-menu {
   display: block;
 }
 
 .menu-link:hover {
-  text-shadow: 0px 0px 5px white;
+  text-shadow: 0px 0px 20px white;
 }
 
 .index-name {
-  text-shadow: 0px 0px 5px white;
+  text-shadow: 0px 0px 10px white;
 }
 
 .index-subtitle {
-  text-shadow: 0px 0px 5px white;
+  text-shadow: 0px 0px 10px white;
 }
-
 
 .nav-link.dropdown-toggle.contacts {
   margin-right: 75px;
@@ -311,7 +284,7 @@ body, html {
 }
 
 #characters {
-  color:black;
+  color: black;
   font-size: 0.85em;
 }
 
@@ -322,7 +295,15 @@ body, html {
 
 .card {
   margin-bottom: 50px;
-  border-color:#a39024;
-  border-width:2px;
-  border-style:solid;
+  border-color: #354042;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.nav-link.menu-link {
+  color:white;
+}
+
+.fas.fa-grip-lines-vertical {
+  margin-left: 6.5px;
 }

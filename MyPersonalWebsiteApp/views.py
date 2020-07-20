@@ -14,6 +14,14 @@ from django.urls import reverse_lazy
 
 class Index (TemplateView):
 
+    template_name = "contacts.html"
+
+class IndecisionApp (TemplateView):
+
+    template_name = "indecision_app\public\index.html"
+
+class Contacts (TemplateView):
+
     template_name = "index/index.html"
 
 class MessageListView(ListView):
@@ -52,17 +60,13 @@ class Profile (TemplateView):
 
         return render (request,self.template_name,context)
 
-class Abilities (TemplateView):
+class AboutMe (TemplateView):
 
-    template_name = "abilities/abilities.html"
+    template_name = "about_me/about_me.html"
 
 class Projects (TemplateView):
 
     template_name = "projects/projects.html"
-
-class Experiences (TemplateView):
-
-    template_name = "experiences/experiences.html"
 
 class Reply_on_message (TemplateView):
 

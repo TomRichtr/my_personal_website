@@ -1,0 +1,22 @@
+{% load static %}
+
+<p class="lead text-dark">A starting web-application developer.</p>
+<p class="text">Just recently I have decided to make a quite a turn and become an application developer. Ever since I am trying to get into programming as fast I can. Eventually I hope I will manage both front-end and back-end technologies and become full-stack developer. But of course, that is a matter of future. For now I will be happy for even small opportunity to be involved, even perhaps in your project.</p>
+<h5 class="sub-title-details">Details</h5>
+<div class="row">
+    <div class="col-sm col-md">
+        <img src="{% static 'pictures\fotoprome.cz-13533_2133_sep.jpg' %}" class="img-fluid" alt="Personal photo" width="50%" height="50%">
+    </div>
+    <div class="col-sm col-md" id="basicinfo-container">
+        <p class="text text-center text-name"><strong>Name:</strong></p>
+        <p class="text text-center">Tomáš Richtr</p>
+        <p class="text text-center"><strong>Age:</strong></p>
+        <p class="text text-center">{{age}}</p>
+        <p class="text text-center"><strong>Location:</strong></p>
+        <p class="text text-center">Prague</p>
+    </div>
+    <div class="col-sm col-md">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d389621.6575543987!2d14.194280648367583!3d49.99490774813919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b939c0970798b%3A0x400af0f66164090!2sPrague!5e0!3m2!1sen!2scz!4v1590926542971!5m2!1sen!2scz" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="img-fluid" heigth="500px"></iframe>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
