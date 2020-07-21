@@ -1,19 +1,3 @@
-// document.querySelector('#email-navbar').addEventListener('click', () => {
-//   navigator.clipboard.writeText('t.richtr@email.cz');
-// });
-
-// document.querySelector('#phone-navbar').addEventListener('click', () => {
-//   navigator.clipboard.writeText('+420778540970')
-// });
-
-// $( "#email-navbar" ).click(function() {
-//   $( ".alert" ).fadeIn( 300 ).delay( 1500 ).fadeOut( 400 );
-// });
-
-// $( "#phone-navbar" ).click(function() {
-//   $( ".alert" ).fadeIn( 300 ).delay( 1500 ).fadeOut( 400 );
-// });
-
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 });

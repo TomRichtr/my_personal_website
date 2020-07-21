@@ -9,12 +9,12 @@
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item">
-        <a class="nav-link menu-link active" href="{% url 'personal_website:profile' %}">Profile</a>
-      </li>
 
       <li class="nav-item dropdown">
-          <a class="nav-link menu-link active" href="{% url 'personal_website:about_me' %}" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">About me</a>
+          <a class="nav-link menu-link active" href="{% url 'personal_website:about_me' %}">About me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link menu-link active" href="{% url 'personal_website:profile' %}">Profile</a>
       </li>
 
       <li class="nav-item">
@@ -22,7 +22,7 @@
       </li>
 
       <li class="nav-item dropdown">
-        <a class="nav-link menu-link contacts active" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Contacts</a>
+        <a class="nav-link menu-link contacts active" href="{% url 'personal_website:contacts' %}">Contacts</a>
       </li>
 
     </ul>
@@ -36,10 +36,7 @@
       <li class="nav-item">
         <a class="nav-link menu-link active" href="https://www.linkedin.com/in/trichtr/" target="_blank"><i class="fab fa-linkedin fa-lg" title="LinkedIn"></i></a>
       </li>
-
-      <li class="nav-item">
-        <a class="nav-link menu-link active" href="{% url 'personal_website:message' %}"><i class="fas fa-comment-dots fa-lg" title="Leave the message!"></i></a>
-      </li>
+      
     {% if user.is_authenticated %}
       <li class="nav-item">
         <a class="nav-link menu-link active" href="{% url 'personal_website:list' %}"><i class="fas fa-list-alt fa-lg" title="Message List"></i></a>

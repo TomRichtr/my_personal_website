@@ -26,7 +26,8 @@ SECRET_KEY = 'a8=n4g5z02wf&ec8d_=if=49=#ko3ya)=4p)+ev7s$^j(-!d=7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.web-inner.cz','127.0.0.1:8000','127.0.0.1']
+ALLOWED_HOSTS = ['www.web-inner.cz', '127.0.0.1:8000',
+                 '127.0.0.1','tomasr.pythonanywhere.com']
 
 
 # Application definition
@@ -40,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'MyPersonalWebsiteApp',
     'crispy_forms',
+    'phonenumber_field',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'

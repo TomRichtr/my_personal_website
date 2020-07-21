@@ -12,17 +12,17 @@ from .models import Message
 from .forms import BoardMessage
 from django.urls import reverse_lazy
 
+
+class Contacts (CreateView):
+
+    model = Message
+    form_class = BoardMessage
+    success_url = 'reply/'
+    template_name = "message/contacts.html"
+
 class Index (TemplateView):
 
-    template_name = "contacts.html"
-
-class IndecisionApp (TemplateView):
-
-    template_name = "indecision_app\public\index.html"
-
-class Contacts (TemplateView):
-
-    template_name = "index/index.html"
+    template_name = "index.html"
 
 class MessageListView(ListView):
     model = Message
@@ -42,27 +42,28 @@ class Profile (TemplateView):
 
     template_name = "profile/profile.html"
 
+class AboutMe (TemplateView):
+
+    template_name = "about_me/about_me.html"
+
     def get(self, request, *args, **kwargs):
         born = date(1987, 6, 29)
         today = date.today()
 
         try:
-            birthday = born.replace(year = today.year)
+            birthday = born.replace(year=today.year)
         except ValueError:
-            birthday = born.replace(year = today.year,month = born.month + 1, day = 1)
+            birthday = born.replace(
+                year=today.year, month=born.month + 1, day=1)
 
         if birthday > today:
             age = today.year - born.year - 1
         else:
             age = today.year - born.year
 
-        context = {"age":age}
+        context = {"age": age}
 
-        return render (request,self.template_name,context)
-
-class AboutMe (TemplateView):
-
-    template_name = "about_me/about_me.html"
+        return render(request, self.template_name, context)
 
 class Projects (TemplateView):
 
@@ -71,10 +72,3 @@ class Projects (TemplateView):
 class Reply_on_message (TemplateView):
 
     template_name = "message/reply.html"
-
-class MessageView (CreateView):
-
-    model = Message
-    form_class = BoardMessage
-    success_url = 'reply/'
-    template_name = "message/message_form.html"
