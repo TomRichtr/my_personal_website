@@ -1,11 +1,11 @@
 #top-navbar {
   background-color: #1B2627;
-  font-family: "Carrois Gothic SC", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 #msg {
   background: none;
-  font-family: "Carrois Gothic SC", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #354042;
 }
 
@@ -91,7 +91,7 @@ html {
 
 #jumbotron-index {
   background: none;
-  font-family: "Carrois Gothic SC", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
 }
 
@@ -142,7 +142,7 @@ html {
 
 #jumbotron-profile {
   background: none;
-  font-family: "Carrois Gothic SC", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #354042;
 }
 
@@ -155,6 +155,7 @@ html {
   color: black;
   font-family: "Montserrat", sans-serif;
   text-align: justify;
+  text-justify: inter-word;
 }
 
 .text-name {
@@ -247,7 +248,14 @@ html {
 
 .display-5 {
   margin-top: 90px;
-  font-family: "Carrois Gothic SC", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  color:#eac700;
+  font-size: 3.5rem;
+}
+
+.display-6 {
+  margin-top: 90px;
+  font-family: "Montserrat", sans-serif;
   color:white;
   font-size: 3.5rem;
 }
