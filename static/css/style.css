@@ -1,11 +1,9 @@
 #top-navbar {
   background-color: #1B2627;
-  font-family: "Montserrat", sans-serif;
 }
 
 #msg {
   background: none;
-  font-family: "Montserrat", sans-serif;
   color: #354042;
 }
 
@@ -18,12 +16,10 @@
 }
 
 #phone-navbar {
-  font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
 }
 
 #email-navbar {
-  font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
 }
 
@@ -36,7 +32,6 @@
 }
 
 .dropdown-item {
-  font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
 }
 
@@ -91,7 +86,6 @@ html {
 
 #jumbotron-index {
   background: none;
-  font-family: "Montserrat", sans-serif;
   color: white;
 }
 
@@ -142,7 +136,6 @@ html {
 
 #jumbotron-profile {
   background: none;
-  font-family: "Montserrat", sans-serif;
   color: #354042;
 }
 
@@ -152,16 +145,12 @@ html {
 }
 
 .text {
-  color: black;
-  font-family: "Montserrat", sans-serif;
   text-align: justify;
-  text-justify: inter-word;
 }
 
 .text-name {
   margin-top: 6%;
 }
-
 
 .details-container {
   display: flex;
@@ -248,14 +237,12 @@ html {
 
 .display-5 {
   margin-top: 90px;
-  font-family: "Montserrat", sans-serif;
   color:#eac700;
   font-size: 3.5rem;
 }
 
 .display-6 {
   margin-top: 90px;
-  font-family: "Montserrat", sans-serif;
   color:white;
   font-size: 3.5rem;
 }
@@ -266,7 +253,6 @@ html {
 
 .skill-name-container {
   color: black;
-  font-family: "Montserrat", sans-serif;
 }
 
 .navbar-nav li:hover > .dropdown-menu {
@@ -303,12 +289,9 @@ html {
   text-decoration: underline;
 }
 
-
 .contacts-container:hover {
   color:#eac700;
 }
-
-
 
 #canvas {
   position: fixed;
