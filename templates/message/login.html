@@ -5,10 +5,10 @@
 {% block content %}
 
 <div class="row">
-  <div class="col-sm-3"></div>
-  <div class="col-sm">
-    <div class="jumbotron jumbotron-fluid" id="jumbotron-profile">
-      <h1 class="display-4">Please Login:</h1>
+  <div class="col-sm col-md col-lg-2"></div>
+  <div class="col-sm-12 col-md-12 col-lg">
+    <div class="jumbotron jumbotron-fluid regular-pages">
+      <h1 class="page-title">Please Login:</h1>
       <p class="lead text-dark">You must a superuser to log in.</p>
       {% if form.errors %}
       <div class="alert-danger" role="alert">Your username and password didn't match. Please try again!</div>
@@ -21,7 +21,7 @@
       </form>
     </div>
   </div>
-  <div class="col-sm-3"></div>
+  <div class="col-sm col-md col-lg-2"></div>
 </div>
 
 {% endblock %}

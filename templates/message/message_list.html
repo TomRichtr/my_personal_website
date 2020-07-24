@@ -2,11 +2,11 @@
 {% load static %}
 {% block content %}
 <div class="row">
-  <div class="col-sm-2"></div>
-  <div class="col-sm">
-    <h1 class="display-5">Message list</h1>
+  <div class="col-sm col-md col-lg-2"></div>
+  <div class="col-sm-12 col-md-12 col-lg">
+    <h1 class="page-title message-list">Message list</h1>
     {% for message in object_list %}
-    <h5 class="sub-title-details"></h5>
+    <h5 class="sub-title"></h5>
     <div class="card">
       <h5 class="card-header">{{message.email}} / {{message.phone}}</h5>
       <div class="card-body">
@@ -16,9 +16,9 @@
       </div>
     </div>
     {% empty %}
-    <h5 class="sub-title-details">No messages available.</h5>
+    <h5 class="sub-title">No messages available.</h5>
     {% endfor %}
   </div>
-  <div class="col-sm-2"></div>
+  <div class="col-sm col-md col-lg-2"></div>
 </div>
 {% endblock %}
