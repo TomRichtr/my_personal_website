@@ -12,6 +12,12 @@
   text-shadow: 0px 0px 10px black;
   text-align: right;
 }
+.lead.text-dark {
+  text-align: left;
+  text-shadow: none;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
 
 .jumbotron.jumbotron-fluid {
   background: none;
@@ -133,9 +139,21 @@ html {
 }
 
 .page-title {
-  margin-top: 25px;
+  margin-top: 5%;
   color: #eac700;
   font-size: 3.5rem;
+}
+
+.page-title {
+  margin-top: 5%;
+  color: #eac700;
+  font-size: 3.5rem;
+}
+
+@media (max-width: 45rem) {
+  .page-title  {
+    margin-top: 15%;
+  }
 }
 
 .checked {
