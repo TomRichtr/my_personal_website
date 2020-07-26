@@ -11,7 +11,7 @@ from . import forms
 from .models import Message
 from .forms import BoardMessage
 from django.urls import reverse_lazy
-
+from django.core.mail import send_mail
 
 class Contacts (CreateView):
 
@@ -72,3 +72,11 @@ class Projects (TemplateView):
 class Reply_on_message (TemplateView):
 
     template_name = "message/reply.html"
+
+    send_mail(
+    'A new message',
+    'You got a new message on tomasr.pythonanywhere.com!' ,
+    'web-inner <noreply@web-inner.cz>',
+    ['t.richtr@email.cz'],
+    fail_silently=False,
+    )
