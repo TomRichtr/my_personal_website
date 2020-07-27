@@ -1,6 +1,6 @@
 from django.shortcuts import  render,get_object_or_404, redirect
 from datetime import date
-from django.views.generic import TemplateView,ListView,DetailView,CreateView,UpdateView,DeleteView
+from django.views.generic import TemplateView,ListView,DetailView,CreateView,UpdateView,DeleteView,FormView
 from django.http import HttpResponse,Http404,HttpResponseRedirect
 from django.conf import settings
 import os
@@ -12,13 +12,38 @@ from .models import Message
 from .forms import BoardMessage
 from django.urls import reverse_lazy
 from django.core.mail import send_mail
+from django.template import loader
 
 class Contacts (CreateView):
-
-    model = Message
-    form_class = BoardMessage
-    success_url = 'reply/'
     template_name = "message/contacts.html"
+    form_class = BoardMessage
+    model = Message
+    success_url = 'reply/'    
+
+    def form_valid(self, form):
+        email=form.cleaned_data.get("email")
+        phone=form.cleaned_data.get("phone")
+        text=form.cleaned_data.get("text")
+        body_sender=f"Greetings,\n\nthank you very much for your message:\n\n{text}.\n\nI will reply as soon as possible.\n\nThank you!\n\nBest regards\nTomas Richtr"
+        body_admin=f"Greetings,\n\nYou got a new message on tomasr.pythonanywhere.com The message is:\n\n{text}.\n\nSender's phone is {phone}."
+
+        send_mail(
+            'tomasr.pythonanywhere.com: Your message was well received!',
+            body_sender,
+            '',
+            [email],
+            fail_silently=False,
+        )
+
+        send_mail(
+            'You got a new message on tomasr.pythonanywhere.com!',
+            body_admin,
+            '',
+            ["web.inner.cz@gmail.com"],
+            fail_silently=False,
+        )
+
+        return super(Contacts, self).form_valid(form)      
 
 class Index (TemplateView):
 
@@ -73,10 +98,5 @@ class Reply_on_message (TemplateView):
 
     template_name = "message/reply.html"
 
-    send_mail(
-    'A new message',
-    'You got a new message on tomasr.pythonanywhere.com!' ,
-    'web-inner <noreply@web-inner.cz>',
-    ['t.richtr@email.cz'],
-    fail_silently=False,
-    )
+
+  

@@ -1,5 +1,6 @@
 from django import forms
 from .models import Message
+
 class BoardMessage (forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
