@@ -231,3 +231,7 @@ html {
 .sign-up-button {
   margin-top:17px;
 }
+
+.sub-title.authentication {
+  margin-bottom: 15px;
+}
