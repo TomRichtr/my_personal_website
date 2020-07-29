@@ -4,11 +4,19 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand menu-link" href="{% url 'personal_website:index' %}"><i class="fas fa-igloo fa-lg"></i></a>
+  <a class="navbar-brand menu-link" href="{% url 'personal_website:index' %}" title="Homescreen"><i class="fas fa-igloo fa-lg"></i></a>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+      <li class="nav-item">
+        <a class="nav-link menu-link active" href="https://www.linkedin.com/in/trichtr/" target="_blank"><i class="fab fa-linkedin fa-lg" title="LinkedIn"></i></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link menu-link active" href="https://github.com/TomRichtr" target="_blank"><i class="fab fa-github-square fa-lg" title="GitHub"></i></a>
+      </li>
 
       <li class="nav-item dropdown">
           <a class="nav-link menu-link active" href="{% url 'personal_website:about_me' %}">About me</a>
@@ -21,6 +29,10 @@
         <a class="nav-link disabled menu-link" href="{% url 'personal_website:projects' %}">Projects</a>
       </li>
 
+      <li class="nav-item">
+        <a class="nav-link disabled menu-link" href="{% url 'personal_website:projects' %}">Blog</a>
+      </li>
+
       <li class="nav-item dropdown">
         <a class="nav-link menu-link contacts active" href="{% url 'personal_website:contacts' %}">Contacts</a>
       </li>
@@ -28,28 +40,21 @@
     </ul>
 
     <ul class="navbar-nav mr-right mt-2 mt-lg-0">
-
-      <li class="nav-item">
-        <a class="nav-link menu-link active" href="https://github.com/TomRichtr" target="_blank"><i class="fab fa-github-square fa-lg" title="GitHub"></i></a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link menu-link active" href="https://www.linkedin.com/in/trichtr/" target="_blank"><i class="fab fa-linkedin fa-lg" title="LinkedIn"></i></a>
-      </li>
-      
     {% if user.is_authenticated %}
+      <li class="nav-item">
+        <a class="nav-link menu-link active"> &nbsp;{{user.email}}&nbsp; <i class="fas fa-user-alt fa-lg" title="Welcome: {{user.username}}"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link menu-link active" href="{% url 'blog:logout' %}"><i class="fas fa-sign-out-alt fa-lg" title="Log Out"></i></a>
+      </li>
+    {% if user.is_superuser %}
       <li class="nav-item">
         <a class="nav-link menu-link active" href="{% url 'personal_website:list' %}"><i class="fas fa-list-alt fa-lg" title="Message List"></i></a>
       </li>
-        <li class="nav-item">
-        <a class="nav-link menu-link active" href="{% url 'logout' %}"><i class="fas fa-sign-out-alt fa-lg" title="Log Out"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link menu-link active"><i class="fas fa-user-alt fa-lg" title="Welcome: {{user.username}}"></i></a>
-      </li>
+    {% endif %}
     {% else %}
       <li class="nav-item">
-        <a class="nav-link menu-link active" href="{% url 'login' %}"><i class="fas fa-sign-in-alt fa-lg" title="Log In"></i></a>
+        <a class="nav-link menu-link active" href="{% url 'blog:login' %}"><i class="fas fa-sign-in-alt fa-lg" title="Log In"></i></a>
       </li>
     {% endif %}
     </ul>

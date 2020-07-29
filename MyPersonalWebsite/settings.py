@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'MyPersonalWebsiteApp',
     'crispy_forms',
     'phonenumber_field',
+    'Blog',  
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'

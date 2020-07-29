@@ -15,12 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from django.contrib.auth import views
-
 
 urlpatterns = [
     path('admin/',admin.site.urls),
     path("",include("MyPersonalWebsiteApp.urls",namespace="personalwebsite")),
-    path('message/login/',views.LoginView.as_view(template_name='message/login.html'), name='login'),
-    path('message/logout/',views.LogoutView.as_view(next_page='/'),name='logout'),
+    path("",include("Blog.urls",namespace="blog")),
 ]
