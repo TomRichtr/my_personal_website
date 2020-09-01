@@ -1,4 +1,44 @@
-{% extends "base.html" %}
-{% load static %}
-{% block content %}
+{% extends "base.html" %} {% load static %} {% block content %}
+<div class="row">
+  <div class="col-sm col-md-2 col-lg-2"></div>
+  <div class="col-sm-12 col-md-8 col-lg-8">
+    <div class="jumbotron jumbotron-fluid regular-pages">
+      <div class="container">
+        <h1 class="page-title">Projects</h1>
+        <h5 class="sub-title"></h5>
+        <div class="row projects-first-row">
+          <div class="col-sm-6">
+            <div class="card" style="width: 100%">
+              <img
+                src="{% static 'pictures\cashflow.jpg' %}"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cash Flow</h5>
+                <p class="card-text">
+                  An react app. Libraries and tools used: react hooks, react
+                  hooks form, typescript, redux persist, react bootstrap,
+                  i18next localization library, firestore and firebase.
+                </p>
+                <a
+                  href="https://budget-app-react-8270b.web.app/"
+                  class="btn btn-primary"
+                  >Production version</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6"></div>
+          <div class="col-sm-6"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm col-md-2 col-lg-2"></div>
+  </div>
+</div>
 {% endblock %}
